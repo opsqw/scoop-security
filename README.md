@@ -4,42 +4,45 @@
         Scoop bucket for Penetration Testing and Cybersecurity related tools.
     </p>
     <p align="center">
-        scoop-security 是一个用于渗透测试和网络安全相关工具下载、安装和自动更新的Scoop软件仓库。
+        <a href="README.md">English</a> | <a href="README-CN.md">简体中文</a>
     </p>
 </div>
 
 
 ## Installation
 
-### 安装Scoop
+### Install Scoop
 
-[Scoop安装教程](./Install.md)
+[Installation](./Install.md)
 
+### Install software from this bucket
 
-
-### 安装本软件仓库中的软件
-
-确保你已经有 Scoop 环境后，执行以下命令订阅本软件仓库：
+After making sure you have Scoop environment, execute the following command in PowerShell to subscribe to this bucket:
 
 ```powershell
 scoop bucket add sec https://github.com/whoopscs/scoop-security
 ```
 
+Once this is done, you can install any app from this bucket (check the list of files in the [`bucket/` directory](https://github.com/whoopscs/scoop-security/tree/main/bucket)). For instance, use the following command:
 
+```powershell
+# Don't include the .json file extension in the app name
+scoop install sec/x64dbg
+```
 
-## Known Apps
+## Featured Apps
 
 ### Apps
 
-| 软件 | 描述 | 安装 |
-| --- | --- | --- |
-| [afrog](https://github.com/zan8in/afrog) | afrog 是一款性能卓越、快速稳定、PoC 可定制化的漏洞扫描工具 - A tool for finding vulnerabilities | scoop install afrog |
+| Manifest    | Description | Install     |
+| ----------- | ----------- | ----------- |
+| [afrog](https://github.com/zan8in/afrog) | afrog 是一款性能卓越、快速稳定、PoC 可定制化的漏洞扫描工具</br>A tool for finding vulnerabilities | scoop install afrog |
 | [AntSword](https://github.com/AntSwordProject/AntSword-Loader) | AntSword 加载器 | scoop install AntSword |
 | [Behinder](https://github.com/rebeyond/Behinder) | “冰蝎”动态二进制加密网站管理客户端 | scoop install Behinder |
 | [Godzilla](https://github.com/BeichenDream/Godzilla) | 哥斯拉 | scoop install Godzilla |
 | [BlueTeamTools](https://github.com/abc123info/BlueTeamTools) | 蓝队分析研判工具箱，功能包括内存马反编译分析、各种代码格式化、网空资产测绘功能、溯源辅助、解密冰蝎流量、解密哥斯拉流量、解密Shiro/CAS/Log4j2的攻击payload、IP/端口连接分析、各种编码/解码功能、蓝队分析常用网址、java反序列化数据包分析、Java类名搜索、Fofa搜索、Hunter搜索等。 | scoop install BlueTeamTools |
-| [burpsuite](https://portswigger.net) | None | scoop install burpsuite |
-| [cobaltstrike](https://www.cobaltstrike.com) | None | scoop install cobaltstrike |
+| [BurpSuite](https://portswigger.net) |  | scoop install BurpSuite |
+| [CobaltStrike](https://www.cobaltstrike.com) |  | scoop install CobaltStrike |
 | [commix](https://github.com/commixproject/commix) | 一个开源渗透测试工具，可自动检测和利用命令注入漏洞 | scoop install commix |
 | [crawlergo](https://github.com/Qianlitp/crawlergo) | 一款功能强大的浏览器爬虫，用于扫描网页漏洞 | scoop install crawlergo |
 | [dddd](https://github.com/SleepingBag945/dddd) | 一款高可拓展的指纹识别、供应链漏洞探测工具。支持从Hunter、Fofa批量拉取目标。 | scoop install dddd |
@@ -110,12 +113,12 @@ scoop bucket add sec https://github.com/whoopscs/scoop-security
 
 
 
-### Burp Extensions
+### Burp Suite Extensions
 
-> 增加部分Burp插件自动更新，BurpSuite 添加插件时，请选择插件目录中`current`文件夹下的程序，避免版本更新后需重复添加插件的问题
+> Add some Burp Suite extensions. When adding extension to Burp Suite, please select the programs under `current` folder in the extension directory to avoid the problem of adding extension repeatedly after version update.
 
-| 软件                                                         | 描述                                                         | 安装                                |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ----------------------------------- |
+| Manifest    | Description | Install     |
+| ----------- | ----------- | ----------- |
 | [BurpShiroPassiveScan](https://github.com/pmiaowu/BurpShiroPassiveScan) | 一款基于BurpSuite的被动式shiro检测插件                       | scoop install BurpShiroPassiveScan  |
 | [BurpFastJsonScan](https://github.com/pmiaowu/BurpFastJsonScan) | 一款基于BurpSuite的被动式FastJson检测插件                    | scoop install BurpFastJsonScan      |
 | [sqlmap4burp-plus-plus](https://github.com/c0ny1/sqlmap4burp-plus-plus) | burp联动sqlmap插件                                           | scoop install sqlmap4burp-plus-plus |
@@ -132,8 +135,8 @@ scoop bucket add sec https://github.com/whoopscs/scoop-security
 
 ### Other Apps
 
-| 软件                                                         | 描述                                                         | 安装                           |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------ |
+| Manifest    | Description | Install     |
+| ----------- | ----------- | ----------- |
 | [openjdk](https://openjfx.io)                                | 解决部分软件在高版本JAVA运行时缺少javafx依赖的问题           | scoop install openjdk          |
 | [notify](https://github.com/projectdiscovery/notify)         | 辅助多个工具的输出并通知到受支持的平台                       | scoop install notify           |
 | [npcap](https://npcap.com)                                   | 专为 Windows 开发的一款网络抓包 SDK                          | scoop install npcap            |
@@ -151,14 +154,16 @@ scoop bucket add sec https://github.com/whoopscs/scoop-security
 ## Question
 **1. I want some other apps!**
 
-Please open new app request [issue](https://github.com/whoopscs/scoop-security/issues) :)
+Please open new app request [issue].
 
-Please consider submitting your new app pull requests to the official buckets if
-they satisfy the criteria before opening new app request in my bucket.
+**2. Some apps are outdated, please update it!**
+
+Be a contributor! Fork it, update the outdated apps app manifest, and file pull-request.
 
 
 
 ## Thanks
 - [ScoopInstaller/Scoop: A command-line installer for Windows.](https://github.com/ScoopInstaller/Scoop)
+- [chawyehsu/dorado: 🐟 Yet Another bucket for lovely Scoop](https://github.com/chawyehsu/dorado)
 - [ScoopInstaller/Extras: 📦 The Extras bucket for Scoop.](https://github.com/ScoopInstaller/Extras)
 - [arch3rPro/PST-Bucket](https://github.com/arch3rPro/PST-Bucket)
