@@ -1,10 +1,11 @@
 <div align="center">
-    <h1 align="center">scoop-security</h1>
+    <h1 align="center">Scoop Security</h1>
     <p align="center">
-        scoop-security 是一个用于渗透测试和网络安全相关工具下载、安装和自动更新的Scoop软件仓库。
+        Scoop Security 是一个用于渗透测试和网络安全相关工具下载、安装和自动更新的 Scoop 存储桶仓库。
     </p>
     <p align="center">
-        <a href="README.md">English</a> | <a href="README-CN.md">简体中文</a>
+        <a href="README.md">English</a> •
+        <a href="README_CN.md">中文</a>
     </p>
 </div>
 
@@ -21,7 +22,7 @@
 确保你已经有 Scoop 环境，执行以下命令订阅本软件仓库:
 
 ```powershell
-scoop bucket add sec https://github.com/tldro/scoop-security
+scoop bucket add sec https://github.com/tldrw/scoop-security
 ```
 
 执行以下命令安装本仓库中的软件:
@@ -207,4 +208,4 @@ scoop install sec/x64dbg
 
 
 
-[issue]: https://github.com/tldro/scoop-security/issues
+[issue]: https://github.com/tldrw/scoop-security/issues

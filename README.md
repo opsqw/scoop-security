@@ -1,10 +1,11 @@
 <div align="center">
-    <h1 align="center">scoop-security</h1>
+    <h1 align="center">Scoop Security</h1>
     <p align="center">
         Scoop bucket for Penetration Testing and Cybersecurity related tools.
     </p>
     <p align="center">
-        <a href="README.md">English</a> | <a href="README-CN.md">简体中文</a>
+            <a href="README.md">English</a> •
+            <a href="README_CN.md">中文</a>
     </p>
 </div>
 
@@ -20,10 +21,10 @@
 After making sure you have Scoop environment, execute the following command in PowerShell to subscribe to this bucket:
 
 ```powershell
-scoop bucket add sec https://github.com/tldro/scoop-security
+scoop bucket add sec https://github.com/tldrw/scoop-security
 ```
 
-Once this is done, you can install any app from this bucket (check the list of files in the [`bucket/` directory](https://github.com/tldro/scoop-security/tree/main/bucket)). For instance, use the following command:
+Once this is done, you can install any app from this bucket (check the list of files in the [`bucket/` directory](https://github.com/tldrw/scoop-security/tree/main/bucket)). For instance, use the following command:
 
 ```powershell
 # Don't include the .json file extension in the app name
@@ -206,9 +207,9 @@ Be a contributor! Fork it, update the outdated apps app manifest, and file pull-
 
 
 ## Star
-[![Stargazers over time](https://starchart.cc/tldro/scoop-security.svg?variant=adaptive)](https://starchart.cc/tldro/scoop-security)
+[![Stargazers over time](https://starchart.cc/tldrw/scoop-security.svg?variant=adaptive)](https://starchart.cc/tldrw/scoop-security)
 
 
 
 
-[issue]: https://github.com/tldro/scoop-security/issues
+[issue]: https://github.com/tldrw/scoop-security/issues
